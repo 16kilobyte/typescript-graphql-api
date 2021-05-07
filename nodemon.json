@@ -1,0 +1,13 @@
+{
+  "ext": "ts",
+  "exec": "npm run dev",
+  "ignore": [
+    "src/**/*.spec.ts"
+  ],
+  "watch": [
+    "src",
+    "tsconfig.json",
+    ".env",
+    "ormconfig.js"
+  ]
+}

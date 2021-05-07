@@ -1,0 +1,11 @@
+schema: "http://127.0.0.1:8080/api"
+documents: ./src/**/*.graphql.{ts, tsx}
+generates:
+  ./src/targets/web.ts:
+    config:
+      noNamespaces: true
+      withComponent: false
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
